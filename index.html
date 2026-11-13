@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nikhil Giri (Vishwa) | Developer Portfolio</title>
+  <meta name="description" content="Portfolio of Nikhil Kumar Giri (Vishwa) - Full-Stack & UI Developer focused on modern web experiences.">
+  <meta name="keywords" content="Nikhil Kumar Giri, Vishwa, Full Stack Developer, UI Developer, Python, Streamlit, React, Next.js, remarkchem, kvg2chem">
+  <meta name="author" content="Nikhil Kumar Giri">
+  <meta name="theme-color" content="#2563eb">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="Nikhil Kumar Giri (Vishwa) | Developer Portfolio">
+  <meta property="og:description" content="Full-Stack & UI Developer building modern digital experiences.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts: Inter & JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Favicon SVG -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%232563eb'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' font-family='sans-serif' font-size='50' font-weight='900' fill='%23ffffff'>V</text></svg>">
+</head>
+<body class="bg-canvas text-body">
+  <!-- Bright Vibrant Ambient Aura Layers -->
+  <div class="bg-ambient-layer" aria-hidden="true">
+    <div class="ambient-orb-top"></div>
+    <div class="ambient-orb-bottom"></div>
+  </div>
+  <div class="bg-grid-overlay" aria-hidden="true"></div>
+  <div class="global-3d-layer" aria-hidden="true">
+    <span class="floating-shape small s1"></span>
+    <span class="floating-shape small s2"></span>
+    <span class="floating-shape medium s3"></span>
+    <span class="floating-shape small s4"></span>
+    <span class="floating-shape medium s5"></span>
+    <span class="floating-shape large s6"></span>
+    <span class="floating-shape small s7"></span>
+    <span class="floating-shape medium s8"></span>
+    <span class="floating-shape small s9"></span>
+  </div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="sticky-nav-wrapper">
+    <nav class="nav-container" aria-label="Main Navigation">
+      <a href="#hero" class="brand-logo" aria-label="Home">
+        
+        <span class="brand-name" id="nav-brand-name">Nikhil <span class="text-cyan">(Vishwa)</span></span>
+      </a>
+
+      <!-- Desktop Nav Links -->
+      <ul class="nav-links" id="desktop-nav">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <!-- Action & Admin Controls -->
+      <div class="nav-actions">
+        <button id="admin-toggle-btn" class="btn-ghost-icon" title="Edit Portfolio Content & Photo (No Coding Required)" aria-label="Open Content Editor">
+          <svg class="icon-sm text-cyan" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+          <span class="admin-pill-text">Edit Info & Photo</span>
+        </button>
+        <a href="#contact" class="btn-primary-sm">Get in Touch</a>
+        
+        <!-- Mobile Menu Hamburger -->
+        <button id="mobile-menu-toggle" class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-drawer" class="mobile-drawer" aria-hidden="true">
+      <ul class="mobile-nav-links">
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+        <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+      </ul>
+      <div class="mobile-drawer-footer">
+        <button id="mobile-admin-btn" class="btn-secondary w-full">⚙️ Visual Content & Photo Editor</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content Layout -->
+  <main id="main-content">
+
+    <!-- ==========================================
+         SECTION 1: HERO SECTION
+         ========================================== -->
+    <section id="hero" class="hero-section">
+      <div class="section-container">
+        <div class="hero-grid">
+          
+          <!-- Left Column: Core Identity & CTAs -->
+          <div class="hero-left">
+            
+            <!-- Large Bold Heading -->
+            <h1 class="hero-title animate-slide-up" id="hero-heading">
+              Hi, I'm <span class="gradient-text">Nikhil Kumar Giri</span>
+            </h1>
+
+            <!-- Subtitle -->
+            <p class="hero-subtitle animate-slide-up delay-1" id="hero-subtitle">
+              BCA Student specializing in AI & Data Analytics | Full-Stack & UI Developer
+            </p>
+
+            <!-- Social Icon Links Directly Under Subtitle -->
+            <div class="social-links-row animate-slide-up delay-2" id="hero-social-links">
+              <!-- Rendered dynamically from data.js -->
+            </div>
+
+            <!-- Two Action Buttons: View Projects and Contact Me -->
+            <div class="hero-cta-buttons animate-slide-up delay-3">
+              <a href="#projects" class="btn-primary">
+                <span>View Projects</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17l9.2-9.2M17 17V8H8"/></svg>
+              </a>
+              <a href="#contact" class="btn-secondary">
+                <span>Contact Me</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+              </a>
+            </div>
+
+          </div>
+
+          <!-- Right Column: User Photo Showcase Card -->
+          <div class="hero-right animate-slide-up delay-2">
+            <div class="hero-photo-showcase">
+              <div class="orbital-scene" aria-hidden="true">
+                <div class="floating-orb orb-one"></div>
+                <div class="floating-orb orb-two"></div>
+                <div class="tech-ring"></div>
+                <div class="floating-cube cube-one">
+                  <span></span><span></span><span></span>
+                </div>
+              </div>
+
+              <div class="avatar-wrapper">
+                <div class="avatar-frame" id="hero-avatar-frame">
+                  <img id="hero-avatar-img" class="avatar-img" src="profile.jpg" alt="Nikhil Kumar Giri (Vishwa)" style="display:none;">
+                  
+                  <!-- Fallback Card (shows when profile.jpg is not yet added) -->
+                  <div id="hero-avatar-fallback" class="avatar-fallback">
+                    <div class="avatar-fallback-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:36px; height:36px;"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <span class="avatar-fallback-name" id="avatar-display-name">Nikhil Kumar Giri</span>
+                    <span class="avatar-fallback-hint">Add your photo anytime (profile.jpg or upload below)</span>
+                    <label for="avatar-file-input" class="avatar-upload-trigger">
+                      <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
+                      <span>Upload My Photo</span>
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hidden File Input for quick photo selection -->
+              <input type="file" id="avatar-file-input" accept="image/*" style="display:none;" aria-label="Upload profile picture">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 2: ABOUT ME SECTION
+         ========================================== -->
+    <section id="about" class="section-wrapper">
+      <div class="section-container">
+        <div class="section-header">
+          <span class="section-badge">// 01. ABOUT</span>
+          <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card-main glass-panel">
+            <div class="about-lead-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <p class="about-paragraph" id="about-bio">
+              I am a BCA student at Teerthanker Mahaveer University graduating in 2027. I have an active passion for building AI-driven applications, clean UIs, and full-stack solutions.
+            </p>
+            <div class="about-metrics">
+              <div class="metric-item">
+                <span class="metric-val text-cyan">2027</span>
+                <span class="metric-lbl">Graduation Year</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val text-purple">AI & Analytics</span>
+                <span class="metric-lbl">Academic Major</span>
+              </div>
+              <div class="metric-item">
+                <span class="metric-val text-emerald">Full-Stack</span>
+                <span class="metric-lbl">Engineering Focus</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-highlights-col" id="about-highlights">
+            <!-- Dynamic Highlight Cards -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 3: SKILLS SECTION
+         ========================================== -->
+    <section id="skills" class="section-wrapper">
+      <div class="section-container">
+        <div class="section-header">
+          
+          <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+          <p class="section-subtext">Minimalist breakdown of languages, modern frameworks, and engineering tools.</p>
+        </div>
+
+        <div class="skills-layout">
+          <!-- Languages Column -->
+          <div class="skill-category-block">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-languages">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Core Languages</h3>
+                <span class="category-hint">Python, JavaScript, Golang</span>
+              </div>
+            </div>
+            <div class="skills-grid" id="skills-languages-grid">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+
+          <!-- Frameworks & Tools Column -->
+          <div class="skill-category-block">
+            <div class="category-header">
+              <div class="cat-icon-wrap cat-frameworks">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="12 2 2 7 12 12 22 7 12 2"/></svg>
+              </div>
+              <div>
+                <h3 class="category-title">Frameworks & Tools</h3>
+                <span class="category-hint">React, Next.js, Streamlit, Flutter</span>
+              </div>
+            </div>
+            <div class="skills-grid" id="skills-frameworks-grid">
+              <!-- Rendered dynamically -->
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 4: PROJECTS SECTION
+         Dedicated Sections:
+         4A: Live Freelance & Client Projects
+         4B: AI, Data Analytics & Engineering Projects
+         ========================================== -->
+    <section id="projects" class="section-wrapper">
+      <div class="section-container">
+        <div class="section-header">
+          
+          <h2 class="section-title">Production & Engineered <span class="gradient-text">Projects</span></h2>
+          <p class="section-subtext">Live client web platforms, deployed AI bug auditing systems, and analytics dashboards.</p>
+        </div>
+
+        <!-- Section 4A: Live Freelance & Client Work -->
+        <div class="projects-subheading-wrap">
+          <h3 class="projects-subheading">
+            <span>Live Freelance & Client Web Systems</span>
+            <span class="subheading-pill pill-client">LIVE IN PRODUCTION</span>
+          </h3>
+        </div>
+        <div class="projects-grid" id="projects-client-grid">
+          <!-- Rendered dynamically:
+               - Remark Chemical (https://remarkchem.com/)
+               - KVG2Chem Industries (https://www.kvg2chem.in/)
+          -->
+        </div>
+
+        <!-- Section 4B: AI, Data Analytics & Engineering Projects -->
+        <div class="projects-subheading-wrap">
+          <h3 class="projects-subheading">
+            <span>AI Systems, ML Dashboards & Platforms</span>
+            <span class="subheading-pill pill-ai">MODELS & ENGINES</span>
+          </h3>
+        </div>
+        <div class="projects-grid" id="projects-ai-grid">
+          <!-- Rendered dynamically:
+               - Bug Catcher AI (https://bug-catcher-ai.onrender.com/)
+               - Streamlit Analytics Dashboards (Dropout risks & Fraud detection)
+               - LocalMart (Ongoing project)
+          -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         SECTION 5: CONTACT SECTION
+         ========================================== -->
+    <section id="contact" class="section-wrapper">
+      <div class="section-container">
+        <div class="section-header">
+          
+          <h2 class="section-title">Direct <span class="gradient-text">Contact</span></h2>
+          <p class="section-subtext">Have a project proposal, freelance opportunity, or want to connect? Reach out anytime.</p>
+        </div>
+
+        <div class="contact-grid">
+          <!-- Direct Contact Information Prominently Displayed -->
+          <div class="contact-info-panel glass-panel">
+            <h3 class="contact-panel-title">Let's Build Together</h3>
+            <p class="contact-panel-desc">
+              Whether you are looking to build a high-conversion client web platform, develop an AI-powered product, or discuss opportunities, my inbox is always open.
+            </p>
+
+            <div class="contact-cards-list">
+              <!-- Email Card -->
+              <div class="contact-detail-card">
+                <div class="contact-icon email-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                </div>
+                <div class="contact-detail-body">
+                  <span class="contact-detail-label">Direct Email</span>
+                  <a href="mailto:nikhil1512006@gmail.com" class="contact-detail-value" id="display-contact-email">nikhil1512006@gmail.com</a>
+                </div>
+                <button class="copy-btn" id="copy-email-btn" title="Copy email address" aria-label="Copy email">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </div>
+
+              <!-- Phone Card -->
+              <div class="contact-detail-card">
+                <div class="contact-icon phone-icon">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                </div>
+                <div class="contact-detail-body">
+                  <span class="contact-detail-label">Direct Phone / WhatsApp</span>
+                  <a href="tel:7255899651" class="contact-detail-value" id="display-contact-phone">7255899651</a>
+                </div>
+                <button class="copy-btn" id="copy-phone-btn" title="Copy phone number" aria-label="Copy phone">
+                  <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+                </button>
+              </div>
+            </div>
+
+            <!-- Fast WhatsApp Link -->
+            <div class="whatsapp-prompt">
+              <span>Prefer instant messaging?</span>
+              <a href="https://wa.me/917255899651" target="_blank" rel="noopener noreferrer" class="whatsapp-link" id="contact-whatsapp-link">
+                <span>Chat on WhatsApp</span>
+                <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Working-Style Contact Form -->
+          <div class="contact-form-panel glass-panel">
+            <h3 class="form-title">Send a Direct Message</h3>
+            <form id="contact-form" class="styled-form" novalidate>
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <div class="input-wrap">
+                  <input type="text" id="form-name" name="name" class="form-input" placeholder="e.g. Alex Sharma" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Your Email</label>
+                <div class="input-wrap">
+                  <input type="email" id="form-email" name="email" class="form-input" placeholder="e.g. alex@example.com" required>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Message</label>
+                <div class="input-wrap">
+                  <textarea id="form-message" name="message" rows="5" class="form-input form-textarea" placeholder="Describe your project, query, or opportunity..." required></textarea>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-primary w-full" id="form-submit-btn">
+                <span>Send Message</span>
+                <svg class="icon-sm" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              </button>
+            </form>
+
+            <div id="form-status" class="form-status-alert" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer-wrapper">
+    <div class="section-container footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+         
+          <span class="footer-name">Nikhil Kumar Giri (Vishwa)</span>
+        </div>
+        <p class="footer-bio">BCA Student specializing in AI & Data Analytics | Full-Stack & UI Developer</p>
+      </div>
+
+      <div class="footer-social-section">
+        <span class="footer-social-label">Connect on Social Networks:</span>
+        <div class="footer-social-links" id="footer-social-links">
+          <!-- Rendered dynamically -->
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p class="copyright-note" id="footer-copyright">
+          &copy; 2026 Nikhil Kumar Giri (Vishwa). All rights reserved.
+        </p>
+        <div class="footer-utility-links">
+          <button id="footer-admin-trigger" class="footer-link-btn" title="Edit content & photo without touching code">
+            ⚙️ Visual Content & Photo Editor
+          </button>
+          <a href="#hero" class="back-to-top" aria-label="Back to top">
+            <span>Back to top</span>
+            <svg class="icon-xs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================
+       VISUAL CONTENT MANAGER MODAL (ADMIN MODE)
+       Enables Nikhil to update ANY text/projects/skills/photo
+       without touching HTML/CSS/JS!
+       ========================================== -->
+  <div id="admin-modal" class="modal-backdrop" aria-hidden="true" role="dialog" aria-labelledby="admin-modal-title">
+    <div class="modal-dialog glass-panel">
+      <div class="modal-header">
+        <div class="modal-title-wrap">
+          <span class="modal-badge">No-Code Manager</span>
+          <h3 id="admin-modal-title" class="modal-title">Edit Portfolio Content & Photo</h3>
+          <p class="modal-subtitle">Update any text, projects, or your profile picture below. Changes save instantly to your browser!</p>
+        </div>
+        <button id="close-admin-modal" class="modal-close-btn" aria-label="Close modal">&times;</button>
+      </div>
+
+      <div class="modal-tabs">
+        <button class="modal-tab active" data-tab="tab-personal">Personal & Photo</button>
+        <button class="modal-tab" data-tab="tab-about">About Section</button>
+        <button class="modal-tab" data-tab="tab-contact">Contact & Socials</button>
+        <button class="modal-tab" data-tab="tab-projects">Projects</button>
+        <button class="modal-tab" data-tab="tab-export">Export data.js</button>
+      </div>
+
+      <div class="modal-body">
+        <!-- Tab 1: Personal, Hero & Photo -->
+        <div id="tab-personal" class="tab-pane active">
+          <!-- Profile Picture Config -->
+          <div style="background:#f1f5f9; padding:16px; border-radius:12px; margin-bottom:16px; border:1px solid #e2e8f0;">
+            <label class="form-label" style="font-weight:700; color:#0f172a; margin-bottom:6px;">📸 Profile Picture / Photo</label>
+            <p style="font-size:0.82rem; color:#64748b; margin-bottom:10px;">
+              Place an image named <code>profile.jpg</code> in your project folder, OR select a photo from your computer right now:
+            </p>
+            <div style="display:flex; gap:12px; align-items:center; flex-wrap:wrap;">
+              <input type="file" id="admin-photo-upload" accept="image/*" style="display:none;">
+              <button type="button" id="admin-photo-choose-btn" class="btn-primary-sm">📁 Choose Photo from Device</button>
+              <span id="admin-photo-status" style="font-size:0.82rem; color:#012f20; font-weight:600;"></span>
+            </div>
+            <div class="form-group mt-2" style="margin-top:10px;">
+              <label class="form-label" style="font-size:0.78rem;">Or Image URL / Filename:</label>
+              <input type="text" id="admin-avatarUrl" class="form-input" placeholder="profile.jpg or https://...">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label class="form-label">Full Name</label>
+              <input type="text" id="admin-fullName" class="form-input">
+            </div>
+            <div class="form-group flex-1">
+              <label class="form-label">Preferred Name / Alias</label>
+              <input type="text" id="admin-preferredName" class="form-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Hero Subtitle</label>
+            <input type="text" id="admin-roleTitle" class="form-input">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Status Badge (Top of Hero)</label>
+            <input type="text" id="admin-statusBadge" class="form-input">
+          </div>
+        </div>
+
+        <!-- Tab 2: About Section -->
+        <div id="tab-about" class="tab-pane">
+          <div class="form-group">
+            <label class="form-label">About Me Bio Paragraph</label>
+            <textarea id="admin-aboutBio" rows="4" class="form-input form-textarea"></textarea>
+          </div>
+        </div>
+
+        <!-- Tab 3: Contact & Socials -->
+        <div id="tab-contact" class="tab-pane">
+          <div class="form-row">
+            <div class="form-group flex-1">
+              <label class="form-label">Email</label>
+              <input type="email" id="admin-email" class="form-input">
+            </div>
+            <div class="form-group flex-1">
+              <label class="form-label">Phone</label>
+              <input type="text" id="admin-phone" class="form-input">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">GitHub URL</label>
+            <input type="url" id="admin-github" class="form-input">
+          </div>
+          <div class="form-group">
+            <label class="form-label">LinkedIn URL</label>
+            <input type="url" id="admin-linkedin" class="form-input">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Instagram URL</label>
+            <input type="url" id="admin-instagram" class="form-input">
+          </div>
+        </div>
+
+        <!-- Tab 4: Projects -->
+        <div id="tab-projects" class="tab-pane">
+          <p class="tab-note" style="color:#6581a8; font-size:0.86rem; margin-bottom:12px;">Edit existing projects or live client URLs:</p>
+          <div id="admin-projects-list" class="admin-project-items">
+            <!-- Dynamic project edit cards -->
+          </div>
+          <button id="admin-add-project-btn" class="btn-secondary-sm mt-3">+ Add New Project</button>
+        </div>
+
+        <!-- Tab 5: Export data.js -->
+        <div id="tab-export" class="tab-pane">
+          <p class="tab-note" style="color:#768fb3; font-size:0.86rem; margin-bottom:10px;">Here is your complete generated <code>data.js</code>. Whenever you want to save your edits permanently to your files or host on GitHub Pages, just copy this and replace your <code>data.js</code> file!</p>
+          <div class="export-box">
+            <textarea id="admin-export-textarea" rows="10" readonly class="code-export-area"></textarea>
+          </div>
+          <div class="export-actions">
+            <button id="admin-copy-data-btn" class="btn-primary-sm">📋 Copy to Clipboard</button>
+            <button id="admin-download-data-btn" class="btn-secondary-sm">💾 Download data.js</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="admin-reset-btn" class="btn-danger-ghost">Reset to Defaults</button>
+        <div class="modal-footer-right">
+          <button id="admin-cancel-btn" class="btn-secondary-sm">Cancel</button>
+          <button id="admin-save-btn" class="btn-primary-sm">Apply & Save Live</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div id="toast-container" class="toast-container" aria-live="assertive"></div>
+
+  <!-- Scripts: First Load Data, Then Portfolio Controller -->
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
