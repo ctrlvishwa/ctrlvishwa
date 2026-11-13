@@ -31,12 +31,6 @@ Use the in-browser editor to preview changes in your current browser. To publish
 changes, export `data.js`, replace the project's copy, and push the update to
 GitHub. See [HOW_TO_UPDATE.md](./HOW_TO_UPDATE.md) for details.
 
-## Deploy with Vercel
-
-This is a static site with no build step. Import this GitHub repository into
-[Vercel](https://vercel.com), keep the root directory, choose **Other** as the
-framework preset, and deploy. The included [`vercel.json`](./vercel.json)
-configures the project root for publishing.
 
 ## Contact and social links
 
